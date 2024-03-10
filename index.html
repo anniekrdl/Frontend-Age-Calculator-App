@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <script src="script.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card-container">
+    <form action="" class="form-container">
+      <div class="form-group" id="groupDay">
+        <label for="date_day" class="uppercase form-label">Day</label>
+        <input type="number" id="date_day" placeholder="DD">
+        <div class="error-txt">is empty</div>
+      </div>
+      <div class="form-group" id="groupMonth">
+        <label for="date_month" class="uppercase form-label">Month</label>
+        <input type="number" id="date_month" placeholder="MM">
+        <div class="error-txt">is empty</div>
+      </div>
+      <div class="form-group" id="groupYear">
+        <label for="date_year" class="uppercase form-label">Year</label>
+        <input type="number" id="date_year" placeholder="YYYY">
+        <div class="error-txt">is empty</div>
+      </div>
+    </form>
+    <div class="icon-line">
+      <hr>
+      <div class="icon-arrow" id="button_icon" onclick="onCalculateAge()">
+        <img src="/assets/images/icon-arrow.svg" alt="" class="logo">
+      </div>
+
+
+    </div>
+
+    <div class="age-answer">
+      <div class="years answer-txt">
+        <div class="years-number" id="years">--</div>
+        <div class="years-text">years</div>
+      </div>
+      <div class="months answer-txt">
+        <div class="months-number" id="months">--</div>
+        <div class="months-text">months</div>
+      </div>
+      <div class="days answer-txt">
+        <div class="days-number" id="days">--</div>
+        <div class="days-text">days</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
